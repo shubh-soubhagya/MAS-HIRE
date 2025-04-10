@@ -1,7 +1,9 @@
 import ollama
 import PyPDF2
+import csv
+import re
 
-# ----- List of Predefined Job Roles -----
+# ----- Predefined Job Roles -----
 job_roles = [
     "Software Engineer", "Data Scientist", "Product Manager", "Cloud Engineer",
     "Cybersecurity Analyst", "Machine Learning Engineer", "DevOps Engineer",
@@ -11,7 +13,7 @@ job_roles = [
     "Quality Assurance Engineer", "UX/UI Designer"
 ]
 
-# ----- Read Text from PDF -----
+# ----- Extract Text from PDF -----
 def extract_text_from_pdf(pdf_path):
     with open(pdf_path, 'rb') as file:
         reader = PyPDF2.PdfReader(file)
@@ -22,28 +24,44 @@ def extract_text_from_pdf(pdf_path):
                 text += page_text + "\n"
     return text.strip()
 
-# ----- Prompt for Extraction -----
+# ----- Prompt Construction -----
 def generate_prompt(cv_text):
     return f"""
-You are an AI recruiter assistant.
+You are an expert recruiter assistant.
 
-From the following resume, extract:
-- Skills
-- Experience
-- Qualifications
-- Job Responsibilities
+From the following resume, extract the following in the EXACT format:
 
-Then based on the content, predict the most appropriate job role the candidate is likely applying for from the following list:
+**Applicant Name:** Full Name  
+**Email:** email@example.com  
+**Phone Number:** +91-XXXXXXX  
 
+**Required Skills:**
+* Skill 1
+* Skill 2
+
+**Required Experience:**
+* Experience 1
+* Experience 2
+
+**Required Qualifications:**
+* Qualification 1
+* Qualification 2
+
+**Job Responsibilities:**
+* Responsibility 1
+* Responsibility 2
+
+From this list:
 {', '.join(job_roles)}
 
-Format output clearly with section headers and bullet points.
+Predict one or more job roles the candidate fits best, like this:
+**Predicted Job Role:** Role 1, Role 2
 
 Resume:
 {cv_text}
 """
 
-# ----- Get Info from Ollama -----
+# ----- Ollama API Call -----
 def analyze_cv(cv_text):
     prompt = generate_prompt(cv_text)
     response = ollama.chat(model='gemma2:2b', messages=[
@@ -52,24 +70,145 @@ def analyze_cv(cv_text):
     ])
     return response['message']['content'].strip()
 
+# ----- Extract Info Using Regex -----
+def extract_info(response):
+    name = re.search(r"\*\*Applicant Name:\*\*\s*(.*)", response)
+    email = re.search(r"\*\*Email:\*\*\s*(.*)", response)
+    phone = re.search(r"\*\*Phone Number:\*\*\s*(.*)", response)
+    roles = re.search(r"\*\*Predicted Job Role:\*\*\s*(.*)", response)
+
+    # Clean values
+    applicant_name = name.group(1).strip() if name else "Not found"
+    email_id = email.group(1).strip() if email else "Not found"
+    phone_no = phone.group(1).strip() if phone else "Not found"
+    predicted_roles = roles.group(1).strip().split(",") if roles else ["Unknown"]
+    predicted_roles = [r.strip() for r in predicted_roles if r.strip()]
+
+    # Clean response (remove extracted fields)
+    cleaned_response = re.sub(r"\*\*Applicant Name:\*\*.*", "", response)
+    cleaned_response = re.sub(r"\*\*Email:\*\*.*", "", cleaned_response)
+    cleaned_response = re.sub(r"\*\*Phone Number:\*\*.*", "", cleaned_response)
+    cleaned_response = re.sub(r"\*\*Predicted Job Role:\*\*.*", "", cleaned_response).strip()
+
+    return applicant_name, email_id, phone_no, predicted_roles, cleaned_response
+
 # ----- Main Runner -----
 def main():
     pdf_path = input("📄 Enter path to the candidate's CV PDF: ").strip()
-    
+
     print("📤 Extracting text from PDF...")
     cv_text = extract_text_from_pdf(pdf_path)
-    
+
     print("🤖 Sending to Gemma 2:2b...")
     result = analyze_cv(cv_text)
 
-    print("\n✅ Extracted CV Insights:\n")
-    print(result)
+    applicant_name, email, phone, roles, extracted_info = extract_info(result)
 
-    # Save to file
-    with open("cv_analysis_output.txt", "w", encoding="utf-8") as f:
-        f.write(result)
+    # Save to CSV
+    with open("cv_analysis_output.csv", mode="w", newline='', encoding="utf-8") as file:
+        writer = csv.writer(file)
+        writer.writerow(["applicant_name", "email", "phone_no", "cv_extracted_info", "job_role"])
+        for role in roles:
+            writer.writerow([applicant_name, email, phone, extracted_info, role])
 
-    print("\n💾 Output saved to 'cv_analysis_output.txt'")
+    # Print Summary
+    print("\n✅ Extracted CV Info:\n")
+    print(extracted_info)
+    print(f"\n🧑 Name: {applicant_name}")
+    print(f"📧 Email: {email}")
+    print(f"📞 Phone: {phone}")
+    print(f"🎯 Predicted Role(s): {', '.join(roles)}")
+    print("\n💾 Saved to 'cv_analysis_output.csv'")
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import ollama
+# import PyPDF2
+
+# # ----- List of Predefined Job Roles -----
+# job_roles = [
+#     "Software Engineer", "Data Scientist", "Product Manager", "Cloud Engineer",
+#     "Cybersecurity Analyst", "Machine Learning Engineer", "DevOps Engineer",
+#     "Full Stack Developer", "Big Data Engineer", "AI Researcher", "Database Administrator",
+#     "Network Engineer", "Software Architect", "Blockchain Developer", "IT Project Manager",
+#     "Business Intelligence Analyst", "Robotics Engineer", "Embedded Systems Engineer",
+#     "Quality Assurance Engineer", "UX/UI Designer"
+# ]
+
+# # ----- Read Text from PDF -----
+# def extract_text_from_pdf(pdf_path):
+#     with open(pdf_path, 'rb') as file:
+#         reader = PyPDF2.PdfReader(file)
+#         text = ""
+#         for page in reader.pages:
+#             page_text = page.extract_text()
+#             if page_text:
+#                 text += page_text + "\n"
+#     return text.strip()
+
+# # ----- Prompt for Extraction -----
+# def generate_prompt(cv_text):
+#     return f"""
+# You are an AI recruiter assistant.
+
+# From the following resume, extract:
+# - Skills
+# - Experience
+# - Qualifications
+# - Job Responsibilities
+
+# Then based on the content, predict the most appropriate job role the candidate is likely applying for from the following list:
+
+# {', '.join(job_roles)}
+
+# Format output clearly with section headers and bullet points.
+
+# Resume:
+# {cv_text}
+# """
+
+# # ----- Get Info from Ollama -----
+# def analyze_cv(cv_text):
+#     prompt = generate_prompt(cv_text)
+#     response = ollama.chat(model='gemma2:2b', messages=[
+#         {"role": "system", "content": "You are a professional HR assistant."},
+#         {"role": "user", "content": prompt}
+#     ])
+#     return response['message']['content'].strip()
+
+# # ----- Main Runner -----
+# def main():
+#     pdf_path = input("📄 Enter path to the candidate's CV PDF: ").strip()
+    
+#     print("📤 Extracting text from PDF...")
+#     cv_text = extract_text_from_pdf(pdf_path)
+    
+#     print("🤖 Sending to Gemma 2:2b...")
+#     result = analyze_cv(cv_text)
+
+#     print("\n✅ Extracted CV Insights:\n")
+#     print(result)
+
+#     # Save to file
+#     with open("cv_analysis_output.txt", "w", encoding="utf-8") as f:
+#         f.write(result)
+
+#     print("\n💾 Output saved to 'cv_analysis_output.txt'")
+
+# if __name__ == "__main__":
+#     main()
+
+
