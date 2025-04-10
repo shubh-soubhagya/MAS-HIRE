@@ -1,56 +1,75 @@
 import ollama
 import PyPDF2
 
-# ---- STEP 1: Read text from the PDF CV ----
+# ----- List of Predefined Job Roles -----
+job_roles = [
+    "Software Engineer", "Data Scientist", "Product Manager", "Cloud Engineer",
+    "Cybersecurity Analyst", "Machine Learning Engineer", "DevOps Engineer",
+    "Full Stack Developer", "Big Data Engineer", "AI Researcher", "Database Administrator",
+    "Network Engineer", "Software Architect", "Blockchain Developer", "IT Project Manager",
+    "Business Intelligence Analyst", "Robotics Engineer", "Embedded Systems Engineer",
+    "Quality Assurance Engineer", "UX/UI Designer"
+]
+
+# ----- Read Text from PDF -----
 def extract_text_from_pdf(pdf_path):
     with open(pdf_path, 'rb') as file:
         reader = PyPDF2.PdfReader(file)
         text = ""
         for page in reader.pages:
-            text += page.extract_text() + "\n"
+            page_text = page.extract_text()
+            if page_text:
+                text += page_text + "\n"
     return text.strip()
 
-# ---- STEP 2: Create prompt to extract information ----
-def generate_extraction_prompt(cv_text):
+# ----- Prompt for Extraction -----
+def generate_prompt(cv_text):
     return f"""
-From the following resume, extract the following information clearly and concisely:
+You are an AI recruiter assistant.
+
+From the following resume, extract:
 - Skills
 - Experience
 - Qualifications
 - Job Responsibilities
 
-Format the output with clear section headings and bullet points.
+Then based on the content, predict the most appropriate job role the candidate is likely applying for from the following list:
+
+{', '.join(job_roles)}
+
+Format output clearly with section headers and bullet points.
 
 Resume:
 {cv_text}
 """
 
-# ---- STEP 3: Call Ollama to get structured info ----
-def extract_info_from_cv(cv_text):
-    prompt = generate_extraction_prompt(cv_text)
+# ----- Get Info from Ollama -----
+def analyze_cv(cv_text):
+    prompt = generate_prompt(cv_text)
     response = ollama.chat(model='gemma2:2b', messages=[
         {"role": "system", "content": "You are a professional HR assistant."},
         {"role": "user", "content": prompt}
     ])
     return response['message']['content'].strip()
 
-# ---- STEP 4: Run everything together ----
+# ----- Main Runner -----
 def main():
-    pdf_path = input("📄 Enter path to the CV PDF: ").strip()
+    pdf_path = input("📄 Enter path to the candidate's CV PDF: ").strip()
     
-    print("📤 Reading and processing the CV...")
+    print("📤 Extracting text from PDF...")
     cv_text = extract_text_from_pdf(pdf_path)
     
-    print("🤖 Sending to Gemma 2:2b for extraction...")
-    extracted_info = extract_info_from_cv(cv_text)
+    print("🤖 Sending to Gemma 2:2b...")
+    result = analyze_cv(cv_text)
 
-    print("\n✅ Extracted Information:\n")
-    print(extracted_info)
+    print("\n✅ Extracted CV Insights:\n")
+    print(result)
 
-    # Optionally save to a text file
-    with open("cv_extracted_info.txt", "w", encoding="utf-8") as f:
-        f.write(extracted_info)
-    print("\n💾 Output saved to 'cv_extracted_info.txt'")
+    # Save to file
+    with open("cv_analysis_output.txt", "w", encoding="utf-8") as f:
+        f.write(result)
+
+    print("\n💾 Output saved to 'cv_analysis_output.txt'")
 
 if __name__ == "__main__":
     main()
