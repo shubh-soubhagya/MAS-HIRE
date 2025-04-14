@@ -64,16 +64,17 @@ def save_to_csv(df: pd.DataFrame, output_path: str) -> None:
     df.to_csv(output_path, index=False)
     print(f"✅ Output saved to '{output_path}'")
 
-def main():
-    input_path = r"data\job_description.csv"
-    output_path = "jobs_summary_extracted.csv"
 
+input_path = r"data\job_description.csv"
+output_path = "jobs_summary_extracted.csv"
+
+def main_jd():
     df = load_csv(input_path)
     final_df = process_job_descriptions(df)
     save_to_csv(final_df, output_path)
 
 if __name__ == "__main__":
-    main()
+    main_jd()
 
 
 

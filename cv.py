@@ -1,4 +1,5 @@
 import ollama
+# from app import TEST_FOLDER, OUTPUT_CSV, JOB_ROLES
 import PyPDF2
 import csv
 import os
@@ -6,17 +7,17 @@ import re
 
 # ----- Constants -----
 TEST_FOLDER = r"test_pdf"
-OUTPUT_CSV = "cv_analysis_output.csv"
+# OUTPUT_CSV = "cv_analysis_output.csv"
 
-# Predefined Job Roles
-JOB_ROLES = [
-    "Software Engineer", "Data Scientist", "Product Manager", "Cloud Engineer",
-    "Cybersecurity Analyst", "Machine Learning Engineer", "DevOps Engineer",
-    "Full Stack Developer", "Big Data Engineer", "AI Researcher", "Database Administrator",
-    "Network Engineer", "Software Architect", "Blockchain Developer", "IT Project Manager",
-    "Business Intelligence Analyst", "Robotics Engineer", "Embedded Systems Engineer",
-    "Quality Assurance Engineer", "UX/UI Designer"
-]
+# # Predefined Job Roles
+# JOB_ROLES = [
+#     "Software Engineer", "Data Scientist", "Product Manager", "Cloud Engineer",
+#     "Cybersecurity Analyst", "Machine Learning Engineer", "DevOps Engineer",
+#     "Full Stack Developer", "Big Data Engineer", "AI Researcher", "Database Administrator",
+#     "Network Engineer", "Software Architect", "Blockchain Developer", "IT Project Manager",
+#     "Business Intelligence Analyst", "Robotics Engineer", "Embedded Systems Engineer",
+#     "Quality Assurance Engineer", "UX/UI Designer"
+# ]
 
 # ----- Text Extraction -----
 def extract_text_from_pdf(pdf_path):
@@ -25,7 +26,7 @@ def extract_text_from_pdf(pdf_path):
         return "\n".join(page.extract_text() for page in reader.pages if page.extract_text()).strip()
 
 # ----- Prompt Creation -----
-def generate_prompt(cv_text):
+def generate_prompt(cv_text, JOB_ROLES):
     return f"""
 You are an expert recruiter assistant.
 
@@ -101,7 +102,7 @@ def process_single_pdf(pdf_path):
     return extract_info_from_response(analysis)
 
 # ----- Folder Processor -----
-def process_all_pdfs(folder_path, output_csv=OUTPUT_CSV):
+def process_all_pdfs(folder_path, output_csv):
     pdf_files = [f for f in os.listdir(folder_path) if f.lower().endswith('.pdf')]
     if not pdf_files:
         print("❌ No PDF files found.")
@@ -128,11 +129,11 @@ def write_to_csv(data, filename):
         writer.writerows(data)
 
 # ----- Main Entrypoint -----
-def main():
+def main_cv():
     process_all_pdfs(TEST_FOLDER)
 
 if __name__ == "__main__":
-    main()
+    main_cv()
 
 
 
