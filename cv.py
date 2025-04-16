@@ -7,17 +7,17 @@ import re
 
 # ----- Constants -----
 TEST_FOLDER = r"test_pdf"
-# OUTPUT_CSV = "cv_analysis_output.csv"
+OUTPUT_CSV = "cv_analysis_output.csv"
 
-# # Predefined Job Roles
-# JOB_ROLES = [
-#     "Software Engineer", "Data Scientist", "Product Manager", "Cloud Engineer",
-#     "Cybersecurity Analyst", "Machine Learning Engineer", "DevOps Engineer",
-#     "Full Stack Developer", "Big Data Engineer", "AI Researcher", "Database Administrator",
-#     "Network Engineer", "Software Architect", "Blockchain Developer", "IT Project Manager",
-#     "Business Intelligence Analyst", "Robotics Engineer", "Embedded Systems Engineer",
-#     "Quality Assurance Engineer", "UX/UI Designer"
-# ]
+# Predefined Job Roles
+JOB_ROLES = [
+    "Software Engineer", "Data Scientist", "Product Manager", "Cloud Engineer",
+    "Cybersecurity Analyst", "Machine Learning Engineer", "DevOps Engineer",
+    "Full Stack Developer", "Big Data Engineer", "AI Researcher", "Database Administrator",
+    "Network Engineer", "Software Architect", "Blockchain Developer", "IT Project Manager",
+    "Business Intelligence Analyst", "Robotics Engineer", "Embedded Systems Engineer",
+    "Quality Assurance Engineer", "UX/UI Designer"
+]
 
 # ----- Text Extraction -----
 def extract_text_from_pdf(pdf_path):
@@ -102,7 +102,7 @@ def process_single_pdf(pdf_path):
     return extract_info_from_response(analysis)
 
 # ----- Folder Processor -----
-def process_all_pdfs(folder_path, output_csv):
+def process_all_pdfs(folder_path, output_csv=OUTPUT_CSV):
     pdf_files = [f for f in os.listdir(folder_path) if f.lower().endswith('.pdf')]
     if not pdf_files:
         print("❌ No PDF files found.")
