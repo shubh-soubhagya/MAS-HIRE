@@ -1,6 +1,6 @@
 from jobDescription_Agent import load_csv, process_job_descriptions, save_to_csv
 from CVExtractor_Agent import process_all_pdfs
-from match import load_and_clean_data, match_cvs_with_jobs
+from MatchScore_Agent import load_and_clean_data, match_cvs_with_jobs
 import pandas as pd
 import ollama
 from tqdm import tqdm
