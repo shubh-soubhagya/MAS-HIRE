@@ -84,7 +84,7 @@ def match_cvs_with_jobs(cv_df, jd_df):
     return pd.DataFrame(output_rows)
 
 # ----- Save to CSV -----
-def save_results(df, filename="cv_match_scores.csv"):
+def save_results(df, filename=r"agents_outputs\cv_match_scores.csv"):
     df.to_csv(filename, index=False)
     print(f"\n✅ Matching complete. Results saved to '{filename}'")
 
