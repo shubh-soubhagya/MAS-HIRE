@@ -66,7 +66,7 @@ def save_to_csv(df: pd.DataFrame, output_path: str) -> None:
 
 
 input_path = r"data\job_description.csv"
-output_path = "jobs_summary_extracted.csv"
+output_path = r"agents_outputs\jobs_summary_extracted.csv"
 
 def main_jd():
     df = load_csv(input_path)
