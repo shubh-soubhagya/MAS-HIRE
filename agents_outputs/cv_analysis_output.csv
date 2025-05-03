@@ -1,0 +1,53 @@
+applicant_name,email,phone_no,cv_extracted_info,job_role
+Kimberly Davis,kimberlydavis49@gmail.com,+1-902-7711,"## Candidate Information Extracted:
+
+
+
+
+
+**Required Skills:**
+* Python & Machine Learning
+* TensorFlow
+* PyTorch
+* Scikit-learn
+
+**Required Experience:**
+* Data Scientist at ABC Inc. (2019-2023)
+* Product Manager at DEF Ltd. (2017-2021)
+
+**Required Qualifications:**
+* Master of Business Administration
+* Certified Ethical Hacker (CEH) 
+
+
+
+
+**Explanation:**
+
+The resume clearly demonstrates the candidate's expertise in both data science and product management.  Her experience working as a Data Scientist at ABC Inc., building predictive models, and her experience leading product development at DEF Ltd., showcases her skillset in these domains. Additionally, Kimberly possesses skills like Python & Machine Learning, which are directly relevant to the field of Data Science.  The ""Predicted Job Role"" reflects this expertise.",Data Scientist
+Kimberly Davis,kimberlydavis49@gmail.com,+1-902-7711,"## Candidate Information Extracted:
+
+
+
+
+
+**Required Skills:**
+* Python & Machine Learning
+* TensorFlow
+* PyTorch
+* Scikit-learn
+
+**Required Experience:**
+* Data Scientist at ABC Inc. (2019-2023)
+* Product Manager at DEF Ltd. (2017-2021)
+
+**Required Qualifications:**
+* Master of Business Administration
+* Certified Ethical Hacker (CEH) 
+
+
+
+
+**Explanation:**
+
+The resume clearly demonstrates the candidate's expertise in both data science and product management.  Her experience working as a Data Scientist at ABC Inc., building predictive models, and her experience leading product development at DEF Ltd., showcases her skillset in these domains. Additionally, Kimberly possesses skills like Python & Machine Learning, which are directly relevant to the field of Data Science.  The ""Predicted Job Role"" reflects this expertise.",Product Manager
