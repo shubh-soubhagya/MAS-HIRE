@@ -8,13 +8,17 @@ import re
 test = r"test_pdf"
 
 # ----- Predefined Job Roles -----
+# job_roles = [
+#     "Software Engineer", "Data Scientist", "Product Manager", "Cloud Engineer",
+#     "Cybersecurity Analyst", "Machine Learning Engineer", "DevOps Engineer",
+#     "Full Stack Developer", "Big Data Engineer", "AI Researcher", "Database Administrator",
+#     "Network Engineer", "Software Architect", "Blockchain Developer", "IT Project Manager",
+#     "Business Intelligence Analyst", "Robotics Engineer", "Embedded Systems Engineer",
+#     "Quality Assurance Engineer", "UX/UI Designer"
+# ]
+
 job_roles = [
-    "Software Engineer", "Data Scientist", "Product Manager", "Cloud Engineer",
-    "Cybersecurity Analyst", "Machine Learning Engineer", "DevOps Engineer",
-    "Full Stack Developer", "Big Data Engineer", "AI Researcher", "Database Administrator",
-    "Network Engineer", "Software Architect", "Blockchain Developer", "IT Project Manager",
-    "Business Intelligence Analyst", "Robotics Engineer", "Embedded Systems Engineer",
-    "Quality Assurance Engineer", "UX/UI Designer"
+    "Data Scientist", "Product Manager"
 ]
 
 # ----- Extract Text from PDF -----
@@ -60,6 +64,8 @@ From this list:
 
 Predict one or more job roles the candidate fits best, like this:
 **Predicted Job Role:** Role 1, Role 2
+There shouldn't be NULL values or Unknown Job roles. There should be atleast one job role.
+
 
 Resume:
 {cv_text}
@@ -125,7 +131,7 @@ def process_all_pdfs(folder_path):
             print(f"⚠️ Error processing {pdf_file}: {e}")
 
     # Save all results
-    with open("cv_analysis_output.csv", mode="w", newline='', encoding="utf-8") as file:
+    with open(r"agents_outputs\cv_analysis_output.csv", mode="w", newline='', encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(["applicant_name", "email", "phone_no", "cv_extracted_info", "job_role"])
         writer.writerows(output_data)
