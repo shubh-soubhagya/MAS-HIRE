@@ -1,5 +1,131 @@
 applicant_name,email,phone_no,cv_extracted_info,job_role
-Kimberly Davis,kimberlydavis49@gmail.com,+1-902-7711,"## Candidate Information Extracted:
+Kimberly Davis,kimberlydavis49@gmail.com,+1-902-7711,"##  Candidate Information Extracted from Resume
+
+
+
+
+
+**Required Skills:**
+* Python & Machine Learning 
+* TensorFlow
+* PyTorch
+* Scikit-learn 
+
+**Required Experience:**
+* Data Scientist at ABC Inc. (2019-2023) 
+* Product Manager at DEF Ltd. (2017-2021) 
+
+**Required Qualifications:**
+* Master of Business Administration  
+* Certified Ethical Hacker (CEH)
+
+**Job Responsibilities:**
+* Developed predictive models that enhanced decision-making processes, reducing operational costs by 25%.
+* Led cross-functional teams to develop innovative solutions, increasing product adoption by 40%. 
+* Built an AI chatbot - Reduced customer support tickets by 40%, enhancing user experience and efficiency.
+
+
+
+
+**Reasoning:** The candidate has significant experience in data analysis (data scientist) and product management with demonstrable results. Their expertise lies in predictive modeling and business strategy while also showcasing proficiency in AI solutions development.",Data Scientist
+Kimberly Davis,kimberlydavis49@gmail.com,+1-902-7711,"##  Candidate Information Extracted from Resume
+
+
+
+
+
+**Required Skills:**
+* Python & Machine Learning 
+* TensorFlow
+* PyTorch
+* Scikit-learn 
+
+**Required Experience:**
+* Data Scientist at ABC Inc. (2019-2023) 
+* Product Manager at DEF Ltd. (2017-2021) 
+
+**Required Qualifications:**
+* Master of Business Administration  
+* Certified Ethical Hacker (CEH)
+
+**Job Responsibilities:**
+* Developed predictive models that enhanced decision-making processes, reducing operational costs by 25%.
+* Led cross-functional teams to develop innovative solutions, increasing product adoption by 40%. 
+* Built an AI chatbot - Reduced customer support tickets by 40%, enhancing user experience and efficiency.
+
+
+
+
+**Reasoning:** The candidate has significant experience in data analysis (data scientist) and product management with demonstrable results. Their expertise lies in predictive modeling and business strategy while also showcasing proficiency in AI solutions development.",Product Manager
+Madison Webster,madisonwebster69@gmail.com,+1-707-2408,"## Candidate Analysis 
+
+
+
+
+
+**Required Skills:**
+* Python & Machine Learning 
+* TensorFlow
+* PyTorch
+* Scikit-learn 
+* Cybersecurity Tools: Metasploit, Wireshark, Burp Suite, Kali Linux 
+
+**Required Experience:**
+* Software Engineer at XYZ Corp (2018-2022) - Scalable backend applications, improved system efficiency by 30%, led agile development sprints.
+* Machine Learning expertise  
+
+
+**Required Qualifications:**
+* Bachelor of Engineering in Information Technology 
+* Master of Science in Data Science
+
+**Job Responsibilities:**
+* Developed scalable backend applications 
+* Improved system efficiency by 30%
+* Led agile development sprints
+* Contributed to AI ethics framework adopted by industry leaders
+
+
+
+
+
+
+**Explanation:** The resume showcases a strong skill set and experience in machine learning (including expertise with TensorFlow, PyTorch, and Scikit-learn) and data science. This aligns well with the predicted job roles of **Machine Learning Engineer** and **Data Scientist**.  Madison's background also demonstrates proficiency in backend development (full-stack web development), network security (CEH certification), and agile methodologies.",Machine Learning Engineer
+Madison Webster,madisonwebster69@gmail.com,+1-707-2408,"## Candidate Analysis 
+
+
+
+
+
+**Required Skills:**
+* Python & Machine Learning 
+* TensorFlow
+* PyTorch
+* Scikit-learn 
+* Cybersecurity Tools: Metasploit, Wireshark, Burp Suite, Kali Linux 
+
+**Required Experience:**
+* Software Engineer at XYZ Corp (2018-2022) - Scalable backend applications, improved system efficiency by 30%, led agile development sprints.
+* Machine Learning expertise  
+
+
+**Required Qualifications:**
+* Bachelor of Engineering in Information Technology 
+* Master of Science in Data Science
+
+**Job Responsibilities:**
+* Developed scalable backend applications 
+* Improved system efficiency by 30%
+* Led agile development sprints
+* Contributed to AI ethics framework adopted by industry leaders
+
+
+
+
+
+
+**Explanation:** The resume showcases a strong skill set and experience in machine learning (including expertise with TensorFlow, PyTorch, and Scikit-learn) and data science. This aligns well with the predicted job roles of **Machine Learning Engineer** and **Data Scientist**.  Madison's background also demonstrates proficiency in backend development (full-stack web development), network security (CEH certification), and agile methodologies.",Data Scientist
+Todd Williams,toddwilliams97@gmail.com,+1-391-1990,"Here's the extracted information based on the provided resume:
 
 
 
@@ -12,20 +138,19 @@ Kimberly Davis,kimberlydavis49@gmail.com,+1-902-7711,"## Candidate Information E
 * Scikit-learn
 
 **Required Experience:**
-* Data Scientist at ABC Inc. (2019-2023)
-* Product Manager at DEF Ltd. (2017-2021)
+* Software Engineer at XYZ Corp (2018-2022) 
 
 **Required Qualifications:**
-* Master of Business Administration
-* Certified Ethical Hacker (CEH) 
+* Master of Business Administration (MBA)
+* Certified Ethical Hacker (CEH)
 
-
-
-
-**Explanation:**
-
-The resume clearly demonstrates the candidate's expertise in both data science and product management.  Her experience working as a Data Scientist at ABC Inc., building predictive models, and her experience leading product development at DEF Ltd., showcases her skillset in these domains. Additionally, Kimberly possesses skills like Python & Machine Learning, which are directly relevant to the field of Data Science.  The ""Predicted Job Role"" reflects this expertise.",Data Scientist
-Kimberly Davis,kimberlydavis49@gmail.com,+1-902-7711,"## Candidate Information Extracted:
+**Job Responsibilities:** 
+* Developed scalable backend applications
+* Improved system efficiency by 30%
+* Led agile development sprints
+* Developed an AI chatbot 
+* Reduced customer support tickets by 40%",Software Engineer
+Todd Williams,toddwilliams97@gmail.com,+1-391-1990,"Here's the extracted information based on the provided resume:
 
 
 
@@ -38,16 +163,113 @@ Kimberly Davis,kimberlydavis49@gmail.com,+1-902-7711,"## Candidate Information E
 * Scikit-learn
 
 **Required Experience:**
-* Data Scientist at ABC Inc. (2019-2023)
-* Product Manager at DEF Ltd. (2017-2021)
+* Software Engineer at XYZ Corp (2018-2022) 
 
 **Required Qualifications:**
-* Master of Business Administration
-* Certified Ethical Hacker (CEH) 
+* Master of Business Administration (MBA)
+* Certified Ethical Hacker (CEH)
+
+**Job Responsibilities:** 
+* Developed scalable backend applications
+* Improved system efficiency by 30%
+* Led agile development sprints
+* Developed an AI chatbot 
+* Reduced customer support tickets by 40%",Machine Learning Engineer
+Nathaniel Ortega,nathanielortega41@gmail.com,+1-665-4242,"## Candidate Information:
+
+
+
+
+
+**Required Skills:** Cybersecurity, Penetration Testing, Risk Assessment, Network Security, Python, TensorFlow, PyTorch, PostgreSQL, Docker, Kubernetes 
+
+**Required Experience:**
+* Data Scientist at ABC Inc. (2019-2023) - Built predictive models that enhanced decision-making processes and reduced operational costs by 25%
+* Software Engineer at XYZ Corp (2018-2022) - Developed scalable backend applications, improved system efficiency by 30%, and led agile development sprints.
+
+**Required Qualifications:**
+* Master of Science in Data Science (2019-2021)
+* AWS Certified Solutions Architect  
+
+
 
 
 
 
 **Explanation:**
 
-The resume clearly demonstrates the candidate's expertise in both data science and product management.  Her experience working as a Data Scientist at ABC Inc., building predictive models, and her experience leading product development at DEF Ltd., showcases her skillset in these domains. Additionally, Kimberly possesses skills like Python & Machine Learning, which are directly relevant to the field of Data Science.  The ""Predicted Job Role"" reflects this expertise.",Product Manager
+The resume demonstrates a strong understanding and experience within the field of data science and software engineering. The candidate possesses technical expertise in machine learning, big data analytics, Python, and cloud solutions like AWS. His achievements and work experience suggest he fits well into roles that utilize these skills and contribute to technical development.",Machine Learning Engineer
+Nathaniel Ortega,nathanielortega41@gmail.com,+1-665-4242,"## Candidate Information:
+
+
+
+
+
+**Required Skills:** Cybersecurity, Penetration Testing, Risk Assessment, Network Security, Python, TensorFlow, PyTorch, PostgreSQL, Docker, Kubernetes 
+
+**Required Experience:**
+* Data Scientist at ABC Inc. (2019-2023) - Built predictive models that enhanced decision-making processes and reduced operational costs by 25%
+* Software Engineer at XYZ Corp (2018-2022) - Developed scalable backend applications, improved system efficiency by 30%, and led agile development sprints.
+
+**Required Qualifications:**
+* Master of Science in Data Science (2019-2021)
+* AWS Certified Solutions Architect  
+
+
+
+
+
+
+**Explanation:**
+
+The resume demonstrates a strong understanding and experience within the field of data science and software engineering. The candidate possesses technical expertise in machine learning, big data analytics, Python, and cloud solutions like AWS. His achievements and work experience suggest he fits well into roles that utilize these skills and contribute to technical development.",Software Engineer
+Brooke Acosta,brookeacosta22@gmail.com,+1-917-4963,"Here's the information extracted from the resume in the requested format:
+
+
+
+
+
+**Required Skills:**
+* Python & Machine Learning
+* TensorFlow
+* PyTorch
+* Scikit-learn
+* AWS Certified Solutions Architect
+
+**Required Experience:**
+* Data Scientist at ABC Inc. (2019-2023)
+  * Built predictive models that enhanced decision-making processes, reducing operational costs by 25%.
+  
+**Required Qualifications:**
+* Master of Business Administration
+* Diploma in Software Engineering
+* AWS Certified Solutions Architect
+
+**Job Responsibilities:**
+* Developed predictive models to enhance decision-making processes.
+* Contributed to an AI ethics framework adopted by industry leaders, shaping responsible AI development.",Data Scientist
+Brooke Acosta,brookeacosta22@gmail.com,+1-917-4963,"Here's the information extracted from the resume in the requested format:
+
+
+
+
+
+**Required Skills:**
+* Python & Machine Learning
+* TensorFlow
+* PyTorch
+* Scikit-learn
+* AWS Certified Solutions Architect
+
+**Required Experience:**
+* Data Scientist at ABC Inc. (2019-2023)
+  * Built predictive models that enhanced decision-making processes, reducing operational costs by 25%.
+  
+**Required Qualifications:**
+* Master of Business Administration
+* Diploma in Software Engineering
+* AWS Certified Solutions Architect
+
+**Job Responsibilities:**
+* Developed predictive models to enhance decision-making processes.
+* Contributed to an AI ethics framework adopted by industry leaders, shaping responsible AI development.",DevOps Engineer
