@@ -8,18 +8,18 @@ import re
 test = r"test_pdf"
 
 # ----- Predefined Job Roles -----
-# job_roles = [
-#     "Software Engineer", "Data Scientist", "Product Manager", "Cloud Engineer",
-#     "Cybersecurity Analyst", "Machine Learning Engineer", "DevOps Engineer",
-#     "Full Stack Developer", "Big Data Engineer", "AI Researcher", "Database Administrator",
-#     "Network Engineer", "Software Architect", "Blockchain Developer", "IT Project Manager",
-#     "Business Intelligence Analyst", "Robotics Engineer", "Embedded Systems Engineer",
-#     "Quality Assurance Engineer", "UX/UI Designer"
-# ]
-
 job_roles = [
-    "Data Scientist", "Product Manager"
+    "Software Engineer", "Data Scientist", "Product Manager", "Cloud Engineer",
+    "Cybersecurity Analyst", "Machine Learning Engineer", "DevOps Engineer",
+    "Full Stack Developer", "Big Data Engineer", "AI Researcher", "Database Administrator",
+    "Network Engineer", "Software Architect", "Blockchain Developer", "IT Project Manager",
+    "Business Intelligence Analyst", "Robotics Engineer", "Embedded Systems Engineer",
+    "Quality Assurance Engineer", "UX/UI Designer"
 ]
+
+# job_roles = [
+#     "Data Scientist", "Product Manager"
+# ]
 
 # ----- Extract Text from PDF -----
 def extract_text_from_pdf(pdf_path):
