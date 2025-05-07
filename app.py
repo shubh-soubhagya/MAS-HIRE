@@ -15,7 +15,7 @@
 
 from CVExtractor_Agent import process_all_pdfs
 
-test = r"one"
+test = r"test_pdf"
 
 process_all_pdfs(test)
 
