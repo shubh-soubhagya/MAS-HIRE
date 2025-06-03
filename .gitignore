@@ -1,2 +1,7 @@
 credentials/credentials_email.json
 token.json
+SendEMailAgent/__pycache__
+MatchScoreAgent/__pycache__
+CVParsingAgent/__pycache__
+JDParsingAgent/__pycache__
+
