@@ -1,67 +1,89 @@
 applicant_name,email,phone_no,cv_extracted_info,job_role
-Kimberly Davis,kimberlydavis49@gmail.com,+1-902-7711,"##  Candidate Extraction:
+Alyssa Chavez,alyssachavez88@gmail.com,+1-465-3587,"## Candidate Information:
+
+
+
+
+
+**Required Skills:** Cybersecurity, Penetration Testing, Risk Assessment, Network Security, AWS Certified Solutions Architect  
+**Required Experience:** Data Scientist (2019-2023) at ABC Inc., experience in full-stack web development and mobile app creation.
+**Required Qualifications:** Diploma in Software Engineering (2013-2015), AWS Certified Solutions Architect  
+**Job Responsibilities:** Built predictive models, enhanced decision-making processes, reducing operational costs by 25%, contributed to an AI ethics framework adopted by industry leaders.
+
+
+
+
+
+**Explanation:**
+
+* **Skills:**  Alyssa's resume highlights specific technical skills in cybersecurity, penetration testing, and AWS solutions architecture which are relevant to the roles of Data Scientist, Cybersecurity Analyst or DevOps engineer.
+* **Experience:** The ""Data Scientist"" job title from her work experience directly aligns with the role she possesses. 
+* **Qualifications:** Her Diploma in Software Engineering and AWS certification demonstrate a clear foundation for both data science and DevOps.  
+
+**Note:** While ""AI Researcher"" also fits, it's important to consider Alyssa's specific qualifications and focus on predictive modeling over research.",Data Scientist
+Alyssa Chavez,alyssachavez88@gmail.com,+1-465-3587,"## Candidate Information:
+
+
+
+
+
+**Required Skills:** Cybersecurity, Penetration Testing, Risk Assessment, Network Security, AWS Certified Solutions Architect  
+**Required Experience:** Data Scientist (2019-2023) at ABC Inc., experience in full-stack web development and mobile app creation.
+**Required Qualifications:** Diploma in Software Engineering (2013-2015), AWS Certified Solutions Architect  
+**Job Responsibilities:** Built predictive models, enhanced decision-making processes, reducing operational costs by 25%, contributed to an AI ethics framework adopted by industry leaders.
+
+
+
+
+
+**Explanation:**
+
+* **Skills:**  Alyssa's resume highlights specific technical skills in cybersecurity, penetration testing, and AWS solutions architecture which are relevant to the roles of Data Scientist, Cybersecurity Analyst or DevOps engineer.
+* **Experience:** The ""Data Scientist"" job title from her work experience directly aligns with the role she possesses. 
+* **Qualifications:** Her Diploma in Software Engineering and AWS certification demonstrate a clear foundation for both data science and DevOps.  
+
+**Note:** While ""AI Researcher"" also fits, it's important to consider Alyssa's specific qualifications and focus on predictive modeling over research.",DevOps Engineer
+Amanda Schneider,amandaschneider31@gmail.com,+1-414-9371,"Here's the extracted information from Amanda Schneider's resume:
 
 
 
 
 
 **Required Skills:**
-* Python & Machine Learning
-* TensorFlow
-* PyTorch
-* Scikit-learn
-* Ethical Hacking
+* Cybersecurity 
+* Penetration testing 
+* Risk assessment 
+* Secure enterprise networks against cyber threats 
 
 **Required Experience:**
-* Data Scientist at ABC Inc. (2019-2023)
-* Product Manager at DEF Ltd. (2017-2021)
-
+* Product Manager at DEF Ltd. (2017-2021) 
+    
 **Required Qualifications:**
-* Master of Business Administration 
-* Certified Ethical Hacker (CEH)
+* AWS Certified Solutions Architect 
+
 
 **Job Responsibilities:**
-* Built predictive models that enhanced decision-making processes, reducing operational costs by 25%
-* Led cross-functional teams to develop innovative solutions, increasing product adoption by 40%
-* Developed an AI chatbot - reduced customer support tickets by 40%, enhancing user experience and efficiency 
-
-
-
-
-
-**Reasoning:**
-
-The resume highlights Kimberly's expertise in data science (predictive modeling) and product management. Her work experience directly relates to these roles. The ""Skills"" section lists relevant technical skills for both fields.  Additionally, the mention of AI-related projects suggests a strong aptitude for Machine Learning.",Data Scientist
-Kimberly Davis,kimberlydavis49@gmail.com,+1-902-7711,"##  Candidate Extraction:
+* Led cross-functional teams to develop innovative solutions 
+* Increased product adoption by 40%",Product Manager
+Amanda Schneider,amandaschneider31@gmail.com,+1-414-9371,"Here's the extracted information from Amanda Schneider's resume:
 
 
 
 
 
 **Required Skills:**
-* Python & Machine Learning
-* TensorFlow
-* PyTorch
-* Scikit-learn
-* Ethical Hacking
+* Cybersecurity 
+* Penetration testing 
+* Risk assessment 
+* Secure enterprise networks against cyber threats 
 
 **Required Experience:**
-* Data Scientist at ABC Inc. (2019-2023)
-* Product Manager at DEF Ltd. (2017-2021)
-
+* Product Manager at DEF Ltd. (2017-2021) 
+    
 **Required Qualifications:**
-* Master of Business Administration 
-* Certified Ethical Hacker (CEH)
+* AWS Certified Solutions Architect 
+
 
 **Job Responsibilities:**
-* Built predictive models that enhanced decision-making processes, reducing operational costs by 25%
-* Led cross-functional teams to develop innovative solutions, increasing product adoption by 40%
-* Developed an AI chatbot - reduced customer support tickets by 40%, enhancing user experience and efficiency 
-
-
-
-
-
-**Reasoning:**
-
-The resume highlights Kimberly's expertise in data science (predictive modeling) and product management. Her work experience directly relates to these roles. The ""Skills"" section lists relevant technical skills for both fields.  Additionally, the mention of AI-related projects suggests a strong aptitude for Machine Learning.",Product Manager
+* Led cross-functional teams to develop innovative solutions 
+* Increased product adoption by 40%",Cybersecurity Analyst
