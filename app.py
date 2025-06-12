@@ -1,4 +1,5 @@
 ######## JD Parsing ##############
+from JDParsingAgent.jobDescription_Agent import load_csv, process_job_descriptions, save_to_csv
 input_path = r"jd_data\job_description.csv"
 output_path = r"agents_outputs\jobs_summary_extracted.csv"
 
