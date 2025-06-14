@@ -1,4 +1,4 @@
-credentials/credentials_email.json
+credentials
 token.json
 SendEMailAgent/__pycache__
 MatchScoreAgent/__pycache__
