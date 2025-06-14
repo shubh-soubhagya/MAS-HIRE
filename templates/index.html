@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analysis System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-search"></i> Resume Analysis System</h1>
+            <p>Intelligent CV-Job Matching Platform</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Step 1: Upload Job Descriptions -->
+            <section class="upload-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-briefcase"></i> Step 1: Upload Job Descriptions</h2>
+                </div>
+                <div class="upload-area">
+                    <div class="file-upload" id="jd-upload">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drop CSV file here or click to browse</p>
+                        <small>CSV with Job Title and Job Description columns</small>
+                        <input type="file" id="jd-file" accept=".csv" hidden>
+                    </div>
+                    <div class="upload-status" id="jd-status"></div>
+                </div>
+            </section>
+
+            <!-- Step 2: JD Processing Option -->
+            <section class="process-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-cogs"></i> Step 2: Process Job Descriptions</h2>
+                </div>
+                <div class="toggle-container">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="process-jd" checked>
+                        <span class="slider"></span>
+                    </label>
+                    <span class="toggle-label">Enable JD Processing</span>
+                </div>
+            </section>
+
+            <!-- Step 3: Upload CVs -->
+            <section class="upload-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-file-pdf"></i> Step 3: Upload CVs</h2>
+                </div>
+                <div class="upload-area">
+                    <div class="file-upload" id="cv-upload">
+                        <i class="fas fa-files"></i>
+                        <p>Drop PDF files here or click to browse</p>
+                        <small>Multiple PDF files supported</small>
+                        <input type="file" id="cv-files" accept=".pdf" multiple hidden>
+                    </div>
+                    <div class="upload-status" id="cv-status"></div>
+                </div>
+            </section>
+
+            <!-- Step 4: Analysis Button -->
+            <section class="analysis-section">
+                <button class="analyze-btn" id="analyze-btn">
+                    <i class="fas fa-play"></i>
+                    Start Analysis
+                </button>
+            </section>
+
+            <!-- Status Container -->
+            <section class="status-section" id="status-section" style="display: none;">
+                <div class="status-container">
+                    <div class="status-header">
+                        <h3><i class="fas fa-spinner fa-spin"></i> Processing Status</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <span class="progress-text" id="progress-text">0%</span>
+                    </div>
+                    <div class="status-message" id="status-message">Ready to start processing</div>
+                </div>
+            </section>
+
+            <!-- Download Section -->
+            <section class="download-section" id="download-section" style="display: none;">
+                <div class="section-header">
+                    <h2><i class="fas fa-download"></i> Download Results</h2>
+                </div>
+                <div class="download-buttons">
+                    <button class="download-btn" id="download-cv-analysis">
+                        <i class="fas fa-file-csv"></i>
+                        Download CV Analysis Data
+                    </button>
+                    <button class="download-btn" id="download-shortlisted">
+                        <i class="fas fa-star"></i>
+                        Download Shortlisted Candidate Data
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
