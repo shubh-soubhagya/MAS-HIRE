@@ -1,89 +1,111 @@
 applicant_name,email,phone_no,cv_extracted_info,job_role
-Alyssa Chavez,alyssachavez88@gmail.com,+1-465-3587,"## Candidate Information:
-
-
-
-
-
-**Required Skills:** Cybersecurity, Penetration Testing, Risk Assessment, Network Security, AWS Certified Solutions Architect  
-**Required Experience:** Data Scientist (2019-2023) at ABC Inc., experience in full-stack web development and mobile app creation.
-**Required Qualifications:** Diploma in Software Engineering (2013-2015), AWS Certified Solutions Architect  
-**Job Responsibilities:** Built predictive models, enhanced decision-making processes, reducing operational costs by 25%, contributed to an AI ethics framework adopted by industry leaders.
-
-
-
-
-
-**Explanation:**
-
-* **Skills:**  Alyssa's resume highlights specific technical skills in cybersecurity, penetration testing, and AWS solutions architecture which are relevant to the roles of Data Scientist, Cybersecurity Analyst or DevOps engineer.
-* **Experience:** The ""Data Scientist"" job title from her work experience directly aligns with the role she possesses. 
-* **Qualifications:** Her Diploma in Software Engineering and AWS certification demonstrate a clear foundation for both data science and DevOps.  
-
-**Note:** While ""AI Researcher"" also fits, it's important to consider Alyssa's specific qualifications and focus on predictive modeling over research.",Data Scientist
-Alyssa Chavez,alyssachavez88@gmail.com,+1-465-3587,"## Candidate Information:
-
-
-
-
-
-**Required Skills:** Cybersecurity, Penetration Testing, Risk Assessment, Network Security, AWS Certified Solutions Architect  
-**Required Experience:** Data Scientist (2019-2023) at ABC Inc., experience in full-stack web development and mobile app creation.
-**Required Qualifications:** Diploma in Software Engineering (2013-2015), AWS Certified Solutions Architect  
-**Job Responsibilities:** Built predictive models, enhanced decision-making processes, reducing operational costs by 25%, contributed to an AI ethics framework adopted by industry leaders.
-
-
-
-
-
-**Explanation:**
-
-* **Skills:**  Alyssa's resume highlights specific technical skills in cybersecurity, penetration testing, and AWS solutions architecture which are relevant to the roles of Data Scientist, Cybersecurity Analyst or DevOps engineer.
-* **Experience:** The ""Data Scientist"" job title from her work experience directly aligns with the role she possesses. 
-* **Qualifications:** Her Diploma in Software Engineering and AWS certification demonstrate a clear foundation for both data science and DevOps.  
-
-**Note:** While ""AI Researcher"" also fits, it's important to consider Alyssa's specific qualifications and focus on predictive modeling over research.",DevOps Engineer
-Amanda Schneider,amandaschneider31@gmail.com,+1-414-9371,"Here's the extracted information from Amanda Schneider's resume:
+Alyssa Chavez,alyssachavez88@gmail.com,+1-465-3587,"##  Candidate Information Extracted: 
 
 
 
 
 
 **Required Skills:**
-* Cybersecurity 
-* Penetration testing 
-* Risk assessment 
-* Secure enterprise networks against cyber threats 
-
-**Required Experience:**
-* Product Manager at DEF Ltd. (2017-2021) 
-    
-**Required Qualifications:**
+* Cybersecurity - Skilled in penetration testing, risk assessment, and securing enterprise networks against cyber threats.
 * AWS Certified Solutions Architect 
 
 
+**Required Experience:** 
+* Data Scientist at ABC Inc. (2019-2023)
+
+**Required Qualifications:**
+* Diploma in Software Engineering 
+
 **Job Responsibilities:**
-* Led cross-functional teams to develop innovative solutions 
-* Increased product adoption by 40%",Product Manager
-Amanda Schneider,amandaschneider31@gmail.com,+1-414-9371,"Here's the extracted information from Amanda Schneider's resume:
+* Built predictive models that enhanced decision-making processes, reducing operational costs by 25%.
+* Published a research paper on AI ethics - Contributed to an AI ethics framework adopted by industry leaders, shaping responsible AI development.",Software Engineer
+Alyssa Chavez,alyssachavez88@gmail.com,+1-465-3587,"##  Candidate Information Extracted: 
 
 
 
 
 
 **Required Skills:**
-* Cybersecurity 
-* Penetration testing 
-* Risk assessment 
-* Secure enterprise networks against cyber threats 
-
-**Required Experience:**
-* Product Manager at DEF Ltd. (2017-2021) 
-    
-**Required Qualifications:**
+* Cybersecurity - Skilled in penetration testing, risk assessment, and securing enterprise networks against cyber threats.
 * AWS Certified Solutions Architect 
 
 
+**Required Experience:** 
+* Data Scientist at ABC Inc. (2019-2023)
+
+**Required Qualifications:**
+* Diploma in Software Engineering 
+
 **Job Responsibilities:**
-* Led cross-functional teams to develop innovative solutions 
-* Increased product adoption by 40%",Cybersecurity Analyst
+* Built predictive models that enhanced decision-making processes, reducing operational costs by 25%.
+* Published a research paper on AI ethics - Contributed to an AI ethics framework adopted by industry leaders, shaping responsible AI development.",Data Scientist
+Amanda Schneider,amandaschneider31@gmail.com,+1-414-9371,"Here's the extracted information based on your provided resume:
+
+
+
+
+
+**Required Skills:**
+* Cybersecurity - Skilled in penetration testing, risk assessment, and securing enterprise networks against cyber threats.
+* Java
+* Spring Boot
+* MySQL
+* Kafka
+* Azure DevOps
+
+**Required Experience:**
+* Product Manager at DEF Ltd. (2017-2021) 
+    * Led cross-functional teams to develop innovative solutions, increasing product adoption by 40%.
+
+**Required Qualifications:**
+* AWS Certified Solutions Architect - Validated expertise in designing and deploying scalable AWS solutions, optimizing performance and security.
+
+**Job Responsibilities:**
+*  Developed and launched new products, leading cross-functional teams.
+* Led initiatives to improve product usability and adoption.
+* Contributed to the development of an AI ethics framework adopted by industry leaders. 
+
+
+
+
+**Explanation:**
+
+* **Job Responsibilities:** The resume highlights Amanda's experience in product management and her skills within security-related domains, suggesting a strong fit for roles like Product Manager or Cybersecurity Analyst.
+*  **Required Skills:** The candidate possesses several technical skills (Java, Spring Boot, MySQL, Kafka, Azure DevOps) and expertise in Cybersecurity that align with these job roles. 
+
+Let me know if you have any other resumes to analyze!",Product Manager
+Amanda Schneider,amandaschneider31@gmail.com,+1-414-9371,"Here's the extracted information based on your provided resume:
+
+
+
+
+
+**Required Skills:**
+* Cybersecurity - Skilled in penetration testing, risk assessment, and securing enterprise networks against cyber threats.
+* Java
+* Spring Boot
+* MySQL
+* Kafka
+* Azure DevOps
+
+**Required Experience:**
+* Product Manager at DEF Ltd. (2017-2021) 
+    * Led cross-functional teams to develop innovative solutions, increasing product adoption by 40%.
+
+**Required Qualifications:**
+* AWS Certified Solutions Architect - Validated expertise in designing and deploying scalable AWS solutions, optimizing performance and security.
+
+**Job Responsibilities:**
+*  Developed and launched new products, leading cross-functional teams.
+* Led initiatives to improve product usability and adoption.
+* Contributed to the development of an AI ethics framework adopted by industry leaders. 
+
+
+
+
+**Explanation:**
+
+* **Job Responsibilities:** The resume highlights Amanda's experience in product management and her skills within security-related domains, suggesting a strong fit for roles like Product Manager or Cybersecurity Analyst.
+*  **Required Skills:** The candidate possesses several technical skills (Java, Spring Boot, MySQL, Kafka, Azure DevOps) and expertise in Cybersecurity that align with these job roles. 
+
+Let me know if you have any other resumes to analyze!",Cybersecurity Analyst
