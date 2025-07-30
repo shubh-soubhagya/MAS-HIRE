@@ -67,5 +67,5 @@ Contributions are welcome! Feel free to fork this repo, make changes, and submit
 For any queries or collaborations:
 **Soubhagya Srivastava**  
 📧 soubhagyasrivastava@240gmail.com 
-🌐 [LinkedIn](https://www.linkedin.com/in/yourprofile)  
+🌐 [LinkedIn]([https://www.linkedin.com/in/yourprofile](https://www.linkedin.com/in/soubhagya-srivastava-611408267/)
 
