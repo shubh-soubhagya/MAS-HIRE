@@ -21,7 +21,7 @@ else:
 
 ######## CV #########
 
-test = r"one"
+test = r"upload_your_resumes"
 process_all_pdfs(test)
 
 ###################### Match Score ##########################
@@ -36,7 +36,7 @@ print("✅ Match score computation completed.")
 
 ####################### Email Agent Implementation #####################
 
-sender_email = "soubhagyasrivastava240@gmail.com"  # Replace with your Gmail
+sender_email = "YOUR_EMAIL_ADDRESS"  # Replace with your Gmail
 csv_file = r'agents_outputs\cv_match_scores.csv'
 
 # Load data
