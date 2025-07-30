@@ -46,7 +46,7 @@ def send_email(service, sender, to, subject, body):
         print(f"❌ Failed to send email to {to}: {e}")
 
 def main():
-    sender_email = "soubhagyasrivastava240@gmail.com"  # Replace with your Gmail
+    sender_email = "YOUR_EMAIL_ADDRESS"  # Replace with your Gmail
     csv_file = r'match_score\cv_match_scores.csv'
 
     # Load data
